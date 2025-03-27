@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Showcase</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 dark:bg-gray-900">
+    <nav class="fixed w-full bg-white dark:bg-gray-800 shadow-lg z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-gray-800 dark:text-white">Portfolio Showcase</div>
+                <button id="theme-toggle" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700">
+                    🌓
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-6 pt-24 pb-16">
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Launch24.eu Card -->
+            <article class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-4">Launch24.eu</h2>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        A dynamic platform for launching and managing digital projects.
+                    </p>
+                    <div class="h-64 mb-4">
+                        <canvas id="launch24-chart"></canvas>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <a href="https://launch24.eu" target="_blank" class="text-blue-500 hover:text-blue-700 font-medium">Visit Site →</a>
+                        <span class="text-sm text-gray-500">Launch: 2024</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Example Project 1 -->
+            <article class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-4">Project Alpha</h2>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        An innovative web application showcasing modern design principles.
+                    </p>
+                    <div class="h-64 mb-4">
+                        <canvas id="alpha-chart"></canvas>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <a href="#" class="text-blue-500 hover:text-blue-700 font-medium">Visit Site →</a>
+                        <span class="text-sm text-gray-500">Launch: 2023</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Example Project 2 -->
+            <article class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-4">Project Beta</h2>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        A cutting-edge platform with advanced analytics integration.
+                    </p>
+                    <div class="h-64 mb-4">
+                        <canvas id="beta-chart"></canvas>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <a href="#" class="text-blue-500 hover:text-blue-700 font-medium">Visit Site →</a>
+                        <span class="text-sm text-gray-500">Launch: 2023</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="bg-white dark:bg-gray-800 shadow-lg mt-16">
+        <div class="container mx-auto px-6 py-4">
+            <p class="text-center text-gray-600 dark:text-gray-300">
+                © 2024 Portfolio Showcase. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html> 
